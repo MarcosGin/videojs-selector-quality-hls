@@ -11,6 +11,7 @@
     "defaults",
     "ie 11"
   ],
+  "repository": "https://github.com/MarcosGin/videojs-selector-quality-hls",
   "scripts": {
     "prebuild": "npm run clean",
     "build": "npm-run-all -p build:*",
@@ -34,7 +35,7 @@
     "watch:css": "npm-run-all build:css:sass watch:css:sass",
     "watch:css:sass": "node-sass src/plugin.scss dist/videojs-selector-quality-hls.css  --output-style=compressed --linefeed=lf --watch src/**/*.scss",
     "watch:js": "npm run build:js -- -w",
-    "prepublishOnly": "npm-run-all build test:verify"
+    "prepublishOnly": "npm-run-all build"
   },
   "engines": {
     "node": ">=8",
