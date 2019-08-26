@@ -1,6 +1,6 @@
 {
   "name": "videojs-selector-quality-hls",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This plugin allows the selection of different video qualities, in addition to this it checks if there is one of HD quality.",
   "main": "dist/videojs-selector-quality-hls.cjs.js",
   "module": "dist/videojs-selector-quality-hls.es.js",
@@ -27,7 +27,6 @@
     "test:verify": "vjsverify --verbose",
     "update-changelog": "conventional-changelog -p videojs -i CHANGELOG.md -s",
     "preversion": "npm test",
-    "version": "is-prerelease || npm run update-changelog && git add CHANGELOG.md",
     "watch": "npm-run-all -p watch:*",
     "watch:css": "npm-run-all build:css:sass watch:css:sass",
     "watch:css:sass": "node-sass src/plugin.scss dist/videojs-selector-quality-hls.css  --output-style=compressed --linefeed=lf --watch src/**/*.scss",
