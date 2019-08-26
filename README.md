@@ -4,9 +4,9 @@ A option in controlbar for select differents qualitys.
 
 ## Examples
 
-![Example1](https://github.com/MarcosGin/videojs-selector-quality-hls/blob/master/example-1.png)
-![Example2](https://github.com/MarcosGin/videojs-selector-quality-hls/blob/master/example-2.png)
-![Example3](https://github.com/MarcosGin/videojs-selector-quality-hls/blob/master/example-3.png)
+![Example1](https://raw.githubusercontent.com/MarcosGin/videojs-selector-quality-hls/HEAD/example-1.png)
+![Example2](https://raw.githubusercontent.com/MarcosGin/videojs-selector-quality-hls/HEAD/example-2.png)
+![Example3](https://raw.githubusercontent.com/MarcosGin/videojs-selector-quality-hls/HEAD/example-3.png)
 
 ## Installation
 
