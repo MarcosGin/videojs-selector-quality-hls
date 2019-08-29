@@ -1,6 +1,6 @@
 {
   "name": "videojs-selector-quality-hls",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "This plugin allows the selection of different video qualities, in addition to this it checks if there is one of HD quality.",
   "main": "dist/videojs-selector-quality-hls.cjs.js",
   "module": "dist/videojs-selector-quality-hls.es.js",
