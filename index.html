@@ -8,7 +8,6 @@
     <style>
       .player_container {
         width: 100%;
-        height: 600px;
       }
     </style>
   </head>
@@ -26,6 +25,7 @@
       </video>
     </div>
 
+    <button id="load">Load another video</button>
     <ul>
       <li><a href="/test/debug.html">Run unit tests in browser.</a></li>
     </ul>
@@ -38,6 +38,15 @@
           "videojs-selector-quality-hls-player",
           { fluid: true }
         ));
+        document.getElementById("load").onclick = function(){
+          examplePlayer.src( {
+                      src: "https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8",
+
+                      type: "application/x-mpegURL"
+                    })
+        }
+
+       
         var selectorQuality = (window.selectorQuality = examplePlayer.selectorQuality());
       })(window, window.videojs);
     </script>

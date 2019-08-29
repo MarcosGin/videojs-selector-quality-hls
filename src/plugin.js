@@ -91,6 +91,7 @@ class SelectorQuality extends Plugin {
       .on("change", this.onChangeQualityLevel.bind(this));
 
     this.player.on("loadedmetadata", this.onLoadedMetaData.bind(this));
+    this.player.on("emptied", this.onReload.bind(this));
   }
 
   onAddQualityLevel({ qualityLevel }) {
@@ -143,6 +144,17 @@ class SelectorQuality extends Plugin {
     if (this._button) {
       this._button.createItems = function() {
         return qualityList;
+      };
+      this._button.update();
+    }
+  }
+
+  onReload() {
+    this.setState({ qualityList: []})
+
+    if (this._button) {
+      this._button.createItems = function() {
+        return [];
       };
       this._button.update();
     }
